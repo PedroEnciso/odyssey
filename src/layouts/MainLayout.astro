@@ -1,0 +1,23 @@
+---
+interface Props {
+  pageName: string
+}
+
+const { pageName } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{pageName} | Odyssey Performance</title>
+</head>
+<body>
+  <header>header</header>
+  <main>
+    <slot />
+  </main>
+  <footer>footer</footer>
+</body>
+</html>
